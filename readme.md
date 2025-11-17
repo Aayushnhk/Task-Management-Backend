@@ -1,10 +1,17 @@
 Technologies Used
+
 •	Runtime: Node.js
+
 •	Language: TypeScript
+
 •	Framework: Express.js
+
 •	Database: PostgreSQL (SQL Database)
+
 •	ORM: Prisma
+
 •	Authentication: JWT (JSON Web Tokens) with Access/Refresh Token system
+
 •	Security: bcrypt for password hashing
 
 Setup & Installation
