@@ -1,4 +1,4 @@
-Technologies Used
+#Technologies Used
 
 •	Runtime: Node.js
 
@@ -14,7 +14,7 @@ Technologies Used
 
 •	Security: bcrypt for password hashing
 
-Setup & Installation
+#Setup & Installation
 
 1. Prerequisites
 
@@ -32,17 +32,17 @@ Install dependencies: npm install
 
 Create a file named. env in the root directory and fill it with your database and JWT secrets.
 
-Variable	                            Description	                                       Example Value
+   Variable	                            Description	                                       Example Value
 
-DATABASE_URL	               PostgreSQL connection string	            postgresql://user:pass@localhost:5432/taskdb?schema=public
+  DATABASE_URL	               PostgreSQL connection string	            postgresql://user:pass@localhost:5432/taskdb?schema=public
 
-JWT_SECRET_ACCESS	         Secret key for short-lived tokens	                   A_VERY_LONG_RANDOM_STRING_1
+  JWT_SECRET_ACCESS	         Secret key for short-lived tokens	                   A_VERY_LONG_RANDOM_STRING_1
 
-JWT_SECRET_REFRESH	          Secret key for long-lived tokens	                 A_DIFFERENT_LONG_RANDOM_STRING_2
+  JWT_SECRET_REFRESH	          Secret key for long-lived tokens	               A_DIFFERENT_LONG_RANDOM_STRING_2
 
-SALT_ROUNDS	                      Cost factor for bcrypt	                                       10
+  SALT_ROUNDS	                      Cost factor for bcrypt	                                  10
 
-PORT	                             API server port	                                          3000
+  PORT	                                API server port	                                         3000
 
 4. Database Setup & Migration
 
@@ -56,7 +56,6 @@ Start the API server in development mode using ts-node and nodemon: npm run dev
 The API will be available at http://localhost:3000.
 
 
-________________________________________
 
 
 
