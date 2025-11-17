@@ -1,45 +1,45 @@
 {
   "compilerOptions": {
-    /* Language and Environment Settings */
-    "target": "es2020",
-    "module": "commonjs", 
-    "lib": ["es2020"],
+    /* Target modern Node.js */
+    "target": "es2022",
+    "lib": ["es2022"],
 
-    /* Module Resolution Settings */
-    "moduleResolution": "node",
+    /* Modules */
+    "module": "Node16",              
+    "moduleResolution": "node16",    
+
+    /* Compatibility */
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    
-    /* Project File Layout */
-    "rootDir": "./src", 
-    "outDir": "./dist", 
-    
-    /* Type Checking and Node Types */
+
+    /* Strict & clean */
     "strict": true,
     "skipLibCheck": true,
-    
-    "types": [
-      "node" 
-    ],
-
     "noUnusedLocals": true,
     "noUnusedParameters": false,
-    "ignoreDeprecations": "6.0", 
-    
-    /* Other Outputs */
-    "sourceMap": true, 
+    "noImplicitReturns": true,
+
+    /* Paths */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Node types */
+    "types": ["node"],
+
+    /* Build output */
+    "sourceMap": true,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "removeComments": true
   },
-  
-  /* Input Files */
+
   "include": [
     "src/**/*.ts",
     "prisma",
     ".env"
   ],
-  
-  /* Excluded Folders */
+
   "exclude": [
     "node_modules",
     "dist"
