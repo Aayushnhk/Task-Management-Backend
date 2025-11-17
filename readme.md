@@ -1,20 +1,20 @@
-#Technologies Used
+Technologies Used
 
-•	Runtime: Node.js
+•   Runtime: Node.js
 
-•	Language: TypeScript
+•   Language: TypeScript
 
-•	Framework: Express.js
+•   Framework: Express.js
 
-•	Database: PostgreSQL (SQL Database)
+•   Database: PostgreSQL (SQL Database)
 
-•	ORM: Prisma
+•   ORM: Prisma
 
-•	Authentication: JWT (JSON Web Tokens) with Access/Refresh Token system
+•   Authentication: JWT (JSON Web Tokens) with Access/Refresh Token system
 
-•	Security: bcrypt for password hashing
+•   Security: bcrypt for password hashing
 
-#Setup & Installation
+Setup & Installation
 
 1. Prerequisites
 
@@ -32,18 +32,7 @@ Install dependencies: npm install
 
 Create a file named. env in the root directory and fill it with your database and JWT secrets.
 
-   Variable	                            Description	                                       Example Value
-
-  DATABASE_URL	               PostgreSQL connection string	            postgresql://user:pass@localhost:5432/taskdb?schema=public
-
-  JWT_SECRET_ACCESS	         Secret key for short-lived tokens	                   A_VERY_LONG_RANDOM_STRING_1
-
-  JWT_SECRET_REFRESH	          Secret key for long-lived tokens	               A_DIFFERENT_LONG_RANDOM_STRING_2
-
-  SALT_ROUNDS	                      Cost factor for bcrypt	                                  10
-
-  PORT	                                API server port	                                         3000
-
+   
 4. Database Setup & Migration
 
 Run the following command to connect to your PostgreSQL database and create the User and Task tables using Prisma migrations:
@@ -54,6 +43,7 @@ npx prisma migrate dev --name init_models
 Start the API server in development mode using ts-node and nodemon: npm run dev
 
 The API will be available at http://localhost:3000.
+
 
 
 
