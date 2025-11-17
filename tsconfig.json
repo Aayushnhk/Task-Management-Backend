@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    /* Language and Environment Settings */
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["es2020"],
+
+    /* Module Resolution Settings */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    /* Project File Layout */
+    "rootDir": "./src", 
+    "outDir": "./dist", 
+    
+    /* Type Checking and Node Types */
+    "strict": true,
+    "skipLibCheck": true,
+    
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/types" 
+    ],
+    
+    "types": [
+      "node" 
+    ],
+
+    /* Warning/Error Suppression */
+    "ignoreDeprecations": "6.0",
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    
+    /* Other Outputs */
+    "sourceMap": true, 
+    "declaration": true,
+    "declarationMap": true
+  },
+  
+  /* Input Files */
+  "include": [
+    "src/**/*.ts",
+    "prisma",
+    ".env"
+  ],
+  
+  /* Excluded Folders */
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
