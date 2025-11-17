@@ -6,17 +6,18 @@
     "module": "CommonJS",
 
     /* Module Resolution Settings */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    
+
     /* Strictness Flags (Centralized) */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": false,
     "skipLibCheck": true,
-    
+
     /* Project File Layout */
     "rootDir": "./src",
     "outDir": "./dist",
@@ -29,15 +30,8 @@
     /* Code Quality Flags */
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    "noImplicitOverride": true,
+    "noImplicitOverride": true
   },
-  "include": [
-    "src/**/*.ts",
-    "prisma",
-    ".env"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*.ts", "prisma", ".env"],
+  "exclude": ["node_modules", "dist"]
 }
