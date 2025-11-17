@@ -1,45 +1,30 @@
 {
   "compilerOptions": {
-    /* Target modern Node.js */
-    "target": "es2022",
-    "lib": ["es2022"],
-
-    /* Modules */
-    "module": "Node16",              
-    "moduleResolution": "node16",    
-
-    /* Compatibility */
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-
-    /* Strict & clean */
+    "target": "ES2020",
+    "module": "CommonJS",
+    
+    // Enable strict checking for quality
     "strict": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-
-    /* Paths */
-    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true,
+    
+    // Specify where TS files live and where to output them
+    "rootDir": "./src", 
     "outDir": "./dist",
-
-    /* Node types */
-    "types": ["node"],
-
-    /* Build output */
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-    "removeComments": true
+    
+    // The bare minimum to recognize Node types
+    "types": [
+      "node" 
+    ]
   },
-
+  
   "include": [
     "src/**/*.ts",
     "prisma",
     ".env"
   ],
-
+  
   "exclude": [
     "node_modules",
     "dist"
